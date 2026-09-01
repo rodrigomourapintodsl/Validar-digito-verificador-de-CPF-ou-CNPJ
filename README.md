@@ -26,7 +26,7 @@ pip install numpy
 ## 💻 Como Usar
 Você pode importar as funções diretamente para o seu projeto. Veja o exemplo abaixo:
 ```python
-from validar_cpf_nunpy import validar_cpf, validar_cnpj
+from validador import validar_cpf, validar_cnpj
 cpf_teste = "123.456.789-09"
 if validar_cpf(cpf_teste):
     print("CPF Válido!")
@@ -47,7 +47,7 @@ for cnpj in cnpjs_para_testar:
 Você pode criar rotinas que testam casos garantindo a integridade
 ```Python
 import pytest
-from validar_cpf_nunpy import validar_cpf, validar_cnpj
+from validador import validar_cpf, validar_cnpj
 
 # --- Testes de CPF ---
 @pytest.mark.parametrize("cpf, resultado_esperado", [
